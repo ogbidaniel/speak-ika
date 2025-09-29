@@ -180,6 +180,13 @@ export default function TryPage() {
     await new Promise((resolve) => setTimeout(resolve, 1500));
 
     const result = mockResults[Math.floor(Math.random() * mockResults.length)];
+    if (!result) {
+      // Protect build when no placeholder data exists on deploy.
+      setStatusMessage("No sample transcription available yet. Add mock data to continue.");
+      setIsTranscribing(false);
+      return;
+    }
+
     setIkaTranscript(result.ika);
     setEnglishTranslation(result.english);
     setStatusMessage("Transcription complete.");
