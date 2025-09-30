@@ -8,8 +8,8 @@ export default function HomePage() {
           Speak <span className="text-[color:var(--color-accent)]">Ika</span> App
         </h1>
         <p className="max-w-2xl text-base text-[color:var(--color-muted)]">
-          Experiment with early tooling for automatic Ika speech recognition and translation, then join the crew helping
-          build the next generation of language technology.
+          We are building AI systems for Ika people. Join us in preserving and promoting the Ika language.
+          We need your help to improve our models. If you are a native Ika speaker, please consider contributing to our project.
         </p>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
             <Link
